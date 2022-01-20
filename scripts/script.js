@@ -37,7 +37,6 @@ date.textContent = currentDate;
 
 // accordian
 for (let i = 0; i < accordians.length; i++){
-  console.log("we here");
   accordians[i].addEventListener("click", function () {
     this.nextElementSibling.classList.toggle("accordian-active");
     this.parentElement.nextElementSibling.classList.toggle("show-accordian");

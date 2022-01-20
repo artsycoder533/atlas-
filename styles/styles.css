@@ -670,6 +670,7 @@ ul {
     padding-bottom: 0.5rem;
     font-weight: bold;
     color: var(--accent-clr);
+    letter-spacing: 1px;
 }
 
 .form-input:focus {
@@ -777,6 +778,11 @@ input[type="checkbox"] {
 
 .cta-btn {
     align-self: center;
+    color: var(--black);
+}
+
+.cta .btn-primary {
+    color: var(--black);
 }
 /* FAQ SECTION */
 
@@ -1079,4 +1085,4 @@ input[type="checkbox"] {
     .accordian {
         justify-content: flex-start;
     }
-}}}}
+}}}}}

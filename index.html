@@ -37,27 +37,69 @@
   <body>
     <!-- header -->
     <header class="header">
-      <nav class="nav center">
-        <div class="nav-wrapper">
-          <div class="company">
-            <img
-              src="https://via.placeholder.com/40C/O https://placeholder.com/"
-              class="company-logo"
-              alt="image of company logo"
-            />
-            <p class="company-name">Company Name</p>
-          </div>
+      <div class="header-container center">
+        <div class="company center">
+          <img
+            src="https://via.placeholder.com/40C/O https://placeholder.com/"
+            class="company-logo"
+            alt="image of company logo"
+          />
+          <p class="company-name">Company Name</p>
+          <!-- hamburger button -->
           <div class="hamburger" id="hamburger" role="button">
             <span class="line" id="line"></span>
           </div>
         </div>
-        <ul class="nav-links" id="nav-links">
-          <li><a href="#hero" class="nav-link current">Home</a></li>
-          <li><a href="./pages/about.html" class="nav-link">About</a></li>
-          <li><a href="./pages/services.html" class="nav-link">Services</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-      </nav>
+
+        <nav class="nav">
+          <!-- nav links -->
+          <ul class="nav-links" id="nav-links">
+            <li><a href="#home" class="nav-link current">Home</a></li>
+            <li>
+              <a class="nav-link sub" tabindex="0">
+                About <i class="fas fa-caret-down"></i>
+              </a>
+              <ul class="sub-links">
+                <li><a href="#footer" class="nav-link sub-link">Sub Link</a></li>
+                <li>
+                  <a href="#footer" class="nav-link sub-link">Sub Link</a>
+                </li>
+                <li>
+                  <a href="#hero" class="nav-link sub-link">Sub Link</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="nav-link sub" tabindex="0">
+                Services <i class="fas fa-caret-down"></i>
+              </a>
+              <ul class="sub-links">
+                <li>
+                  <a href="#hero" class="nav-link sub-link">Sub Link</a>
+                </li>
+                <li>
+                  <a href="#footer" class="nav-link sub-link"
+                    >Sub Link</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="nav-link sub" tabindex="0">
+                Get Started <i class="fas fa-caret-down"></i>
+              </a>
+              <ul class="sub-links">
+                <li><a href="#hero" class="nav-link sub-link">Sub Link</a></li>
+                <li>
+                  <a href="#footer" class="nav-link sub-link">Sub Link</a>
+                </li>
+                <li><a href="#hero" class="nav-link sub-link">Contact</a></li>
+              </ul>
+            </li>
+            <!-- <li><a href="#contact" class="nav-link">Contact</a></li> -->
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <!-- main -->

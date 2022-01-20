@@ -57,21 +57,16 @@ body {
 a {
     text-decoration: none;
     position: relative;
+    display: block;
+    color: var(--link-clr);
 }
 
-a::after {
-    content: '';
-    position: absolute;
-    height: 2px;
-    background: var(--link-hover-clr);
-    left: 0;
-    bottom: -8px;
-    width: 0;
-    transition: var(--transition);
+a:visited {
+  color: var(--link-clr);
 }
 
-a:hover::after {
-    width: 100%;
+a:hover{
+    
 }
 
 a:active {
@@ -80,6 +75,8 @@ a:active {
 
 ul {
     list-style-type: none;
+    /* addition */
+    padding-left: 0;
 }
 
 .btn {
@@ -145,6 +142,10 @@ ul {
     max-width: 1200px;
     width: 90vw;
     margin: 0 auto;
+}
+
+.current {
+  color: var(--accent-clr);
 }
 
 .title {
@@ -214,41 +215,33 @@ ul {
 }
 
 /* HEADER */
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 75px;
-    padding: 1rem;
-    background: var(--header-background-clr);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
+.header {   
+  height: 75px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  background: var(--header-background-clr);
+  display: flex;
+  align-items: center;
 }
 
-/* .sticky {
-    height: 60px;
-} */
-
-.nav {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.header-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+  width: 100%;
+  /* overflow: hidden; */
+  
 }
 
-.nav-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-.company{
-    display: flex;
-    align-items: center;
+.company {
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 .company-logo {
@@ -263,46 +256,67 @@ ul {
     font-weight: bold;
     color: var(--accent-clr);
     letter-spacing: 1px;
+    width: 100%;
+}
+
+/* navigation */
+.nav {
+    width: 100%;
+    /* height: 100%; */
 }
 
 .nav-links {
-    transform: translateY(100%);
-    transition: var(--transition);
-    height: 100%;
-    padding: 1rem;
-}
-
-.nav-links .current {
-    color: var(--accent-clr);
-}
-
-.nav-links,
-.show-links {
-    position:fixed;
     display: flex;
+    position: absolute;
     flex-direction: column;
-    top: 60px;
+    background: var(--header-background-clr);
+    top: 59px;
+    top: 75px;
     left: 0;
     width: 100%;
-    height: calc(100vh - 60px);
-    height: 100%;
-    background-color: var(--header-background-clr);
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    transition: var(--transition);
-    overflow: hidden;
-    z-index: 2;
+    display: none;
+    height: calc(100vh - 75px);
 }
 
 .show-links {
-    transform: translateY(0);
+    /* display: block; */
+    display: flex;
 }
 
 .nav-link {
-    font-size: 2rem;
+  cursor: pointer;
+  padding: 1rem;
+  transition: var(--transition);
+  padding-left: 3rem;
+}
+
+/* sub links */
+.sub-links {
+  background: var(--header-background-clr);
+  display: none;
+} 
+
+.sub.active-sub {
+  background: var(--accent-clr);
+}
+
+.sub-links.show-sublinks {
+  display: block;
+  transition: var(--transition);
+}
+
+.rotate {
+  transform: rotate(45deg);
+}
+
+.sub-link{
+  padding-left: 6rem;
+}
+
+.nav-link:hover,
+.sub-link:hover{
+    background: var(--black);
     color: var(--link-clr);
-    position: relative;
 }
 
 /* hamburger button */
@@ -313,32 +327,6 @@ ul {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-}
-
-@media screen and (min-width: 997px){
-    .nav {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    
-    .hamburger {
-        display: none;
-    }
-
-    .nav-links {
-        display: flex;
-        flex-direction: row;
-        gap: 2rem;
-        position: static;
-        transform: translateY(0);
-        height: 100%;
-        justify-content: flex-end;
-    }
-
-    .nav-link {
-        font-size: 1.2rem;
-    }
 }
 
 .line,
@@ -388,8 +376,52 @@ ul {
     transform: rotate(-45deg);
 }
 
-.main {
-    position: relative;
+@media screen and (min-width: 1100px){
+  .hamburger {
+    display: none;
+  }
+
+  .nav {
+    height: 100%;
+  }
+  
+  .header-container {
+    /* flex-direction: row; */
+    flex-direction: row;
+  }
+
+  .nav-links {
+    position: initial;
+    flex-direction: row;
+    height: 100%;
+    margin: 0;
+    justify-content: flex-end;
+    gap: 1rem;
+    display: flex;
+  }
+
+  .nav-link {
+    height: 100%;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-link i {
+    margin-left: 1rem;
+  }
+
+  .sub-links {
+    position: absolute;
+  }
+
+  .sub-link {
+    padding: 1rem;
+  }
+
+  .nav-links li:hover .sub-links {
+    display: block;
+  }
 }
 
 /* HERO SECTION */

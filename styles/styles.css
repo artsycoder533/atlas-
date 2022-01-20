@@ -46,6 +46,7 @@
 /* GLOBAL STYLES */
 html{
     scroll-behavior: smooth;
+    scroll-padding: 1rem;
 }
 
 body {

@@ -260,6 +260,10 @@ ul {
     width: 100%;
 }
 
+.logo-link:hover {
+    opacity: 0.6;
+}
+
 /* navigation */
 .nav {
     width: 100%;

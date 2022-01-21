@@ -464,7 +464,7 @@ ul {
 }
 
 .hero-heading {
-    font-size: 3rem;
+    font-size: 2rem;
     color: white;
 }
 
@@ -508,6 +508,11 @@ ul {
     fill: var(--off-white);
 }
 
+@media screen and (min-width: 767px){
+    .hero-heading {
+        font-size: 3rem;
+    }
+}
 /* COMPANY ABOUT SECTION */
 .about {
     min-height: 100vh;

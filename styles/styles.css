@@ -91,10 +91,11 @@ ul {
     display: inline-block;
     letter-spacing: 1px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .btn-primary {
-    color: var(--white);
+    color: var(--black);
     background: var(--accent-clr);
     color: var(--black);
     border: none;
@@ -155,11 +156,18 @@ ul {
 .title {
     margin-bottom: 2rem;
     text-align: center;
-    font-size: 3rem;
-    position: relative;
+    font-size: 2rem;
+     position: relative; 
     text-transform: uppercase;
-    letter-spacing: 1px;
+    
 }
+
+@media screen and (min-width: 767px) {
+    .title {
+        font-size: 3rem;
+    }
+}
+
 
 .title::after {
     content: '';
@@ -986,6 +994,10 @@ input[type="checkbox"] {
     margin-top: 2rem;
 }
 
+.bio .btn-primary {
+    color: var(--black);
+}
+
 @media screen and (min-width: 992px){
     .bio-section {
         flex-direction: row;
@@ -1040,11 +1052,14 @@ input[type="checkbox"] {
 
 .services-description {
     background:var(--white);
-    
     padding: 2rem;
     box-shadow: var(--box-shadow);
     max-width: 90vw;
 } 
+
+.services-description .btn-primary {
+    color: var(--black);
+}
 
 .individual {
     background: url(../images/individual.jpg) no-repeat center / cover;
@@ -1181,6 +1196,7 @@ input[type="checkbox"] {
 
 .cta .connect-heading {
     color: var(--black);
+    font-size: 1.5rem;
 }
 
 .services-cta .connect-heading {

@@ -13,8 +13,8 @@ const subLink = document.querySelectorAll(".sub-link");
 // const plus = document.getElementsByClassName("fa-plus");
 
 const toggleMenu = () => {
-    line.classList.toggle("open-hamburger");
-    navLinks.classList.toggle("show-links");
+  line.classList.toggle("open-hamburger");
+  navLinks.classList.toggle("show-links");
 }
 
 // sticky header
@@ -40,6 +40,7 @@ function toggleSubMenu(e) {
   }
   //if on mobile, honor event listeners
   target.nextElementSibling.classList.toggle("show-sublinks");
+  target.children[0].classList.toggle("rotate");
   for (const link of subLink) {
     link.addEventListener("click", function () {
       //if menu open, toggle

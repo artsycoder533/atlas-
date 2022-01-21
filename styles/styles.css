@@ -82,7 +82,7 @@ ul {
 }
 
 .btn {
-    padding: 1rem 1.5rem;
+    padding: 0.75rem 1.2rem;
     outline: none;
     text-transform: capitalize;
     cursor: pointer;
@@ -90,7 +90,7 @@ ul {
     font-weight: bold;
     display: inline-block;
     letter-spacing: 1px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     text-align: center;
 }
 

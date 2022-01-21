@@ -448,7 +448,7 @@ ul {
 
 /* HERO SECTION */
 .hero {
-    min-height: 80vh;
+    min-height: 85vh;
     position: relative;
     display: flex;
     align-items: center;

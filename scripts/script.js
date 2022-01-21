@@ -5,6 +5,10 @@ const scrollBtn = document.getElementById("scroll");
 const header = document.querySelector(".header");
 const date = document.querySelector(".date");
 const accordians = document.getElementsByClassName("accordian-icon");
+const subs = document.querySelectorAll(".sub");
+const subLinks = document.querySelectorAll(".sub-links");
+const subLink = document.querySelectorAll(".sub-link");
+
 // const minus = document.getElementsByClassName("fa-minus");
 // const plus = document.getElementsByClassName("fa-plus");
 
@@ -27,9 +31,39 @@ window.onscroll = function () {
   }
 };
 
-scrollBtn.addEventListener("click", () => {
-  document.documentElement.scrollTop = 0;
-});
+// sub menu
+function toggleSubMenu(e) {
+  const target = e.currentTarget;
+  //if on desktop, ignore event listeners
+  if (window.outerWidth > 1100) {
+    return;
+  }
+  //if on mobile, honor event listeners
+  target.nextElementSibling.classList.toggle("show-sublinks");
+  for (const link of subLink) {
+    link.addEventListener("click", function () {
+      //if menu open, toggle
+      closeOpenSublinks();
+      line.classList.remove("open-hamburger");
+      navLinks.classList.remove("show-links");
+    });
+  }
+}
+
+//check for open links
+function closeOpenSublinks(e) {
+  for (const sublink of subLinks) {
+    if (sublink.classList.contains("show-sublinks")) {
+      sublink.classList.remove("show-sublinks");
+    }
+  }
+}
+
+//sub links event listener
+for (const sub of subs) {
+  sub.addEventListener("click", toggleSubMenu);
+}
+
 
 //dynamic date
 const currentDate = new Date().getFullYear();
@@ -47,3 +81,7 @@ for (let i = 0; i < accordians.length; i++){
 
 
 hamburgerBtn.addEventListener("click", toggleMenu);
+
+scrollBtn.addEventListener("click", () => {
+  document.documentElement.scrollTop = 0;
+});

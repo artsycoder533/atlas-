@@ -894,6 +894,10 @@ input[type="checkbox"] {
      padding: 1.5rem;
 } 
 
+.footer .company-name {
+    text-align: center;
+}
+
 /* ABOUT PAGE */
 /* half hero section */
 .half-hero {

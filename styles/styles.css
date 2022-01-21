@@ -152,8 +152,10 @@ ul {
 .title {
     margin-bottom: 2rem;
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
     position: relative;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .title::after {
@@ -974,34 +976,26 @@ input[type="checkbox"] {
     /* flex-wrap: wrap; */
 }
 
-.service:nth-of-type(even){
-    align-self: flex-end;
+.services-title {
+    align-self: center;
+    font-size: 1.5rem;
 }
 
-.services-image:nth-of-type(1) {
-    height: 400px;
-    /* background: url(../images/hero.jpg) no-repeat center / cover; */
-    max-width: 600px;
-    width: 90vw;
-}
-
-.individual {
-    background: url(../images/individual.jpg) no-repeat center / cover;
-}
-
-.assessments {
-    background: url(../images/assessments.jpg) no-repeat center / cover;
+.service {
+    width: 100%;
+    box-shadow: var(--box-shadow);
+    margin-bottom: 2rem;
 }
 
 .services-description {
-    margin-top: -200px;
-    margin-left: 75px;
-    max-width: 800px;
-    width: 80%;
+    /* margin-top: -300px;
+    margin-left: 200px; */
+    max-width: 1000px;
+    /* width: 80%; */
     padding: 1rem;
-    box-shadow: var(--box-shadow);
+    
     background:var(--white);
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
 }
 
 .services-name {
@@ -1010,6 +1004,18 @@ input[type="checkbox"] {
 
 .services-text {
     margin-bottom: 1rem;
+}
+
+.services-text:nth-of-type(5) {
+    padding-left: 1rem;
+}
+
+.services-text:nth-of-type(7) {
+    padding-left: 1rem;
+}
+
+.services-text:nth-of-type(9) {
+    padding-left: 1rem;
 }
 
 .services-list {

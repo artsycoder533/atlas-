@@ -1062,10 +1062,8 @@ input[type="checkbox"] {
 
 .service {
     width: 100%;
-    /* box-shadow: var(--box-shadow); */
     margin-bottom: 2rem;
     display: flex;
-    /* flex-direction: column; */
 }
  
  .services-image {
@@ -1089,20 +1087,11 @@ input[type="checkbox"] {
 
 .individual {
     background: url(../images/individual.jpg) no-repeat center / cover;
-    background: var(--header-background-clr);
-    /* width: 90vw; */
-/* border: 1px solid red; */
-    /* display: none; */
-    /* width: 0; */
 } 
 
 .assessments {
     background: url(../images/assessments.jpg) no-repeat left / cover;
     background: var(--header-background-clr);
-    /* width: 90vw; */
-    /* border: 1px solid red; */
-    /* width: 0; */
-    
 }
 
 .services-name {
@@ -1170,36 +1159,27 @@ input[type="checkbox"] {
     justify-content: flex-start;
     max-width: 600px;
     width: 100%;
-    /* border: 1px solid green; */
 }
 
 .accordian-icon {
-    /* width: 40px;
-    height: 40px;  */
     border-radius: 50%;
     outline: none;
-    /* background: var(--accent-clr); */
     color: black;
     font-size: 1.5rem;
     border: none;
-    /* margin-right: 1rem; */
     cursor: pointer;
-    /* transition: var(--transition); */
     display: flex;
     justify-content: center;
     align-items: center;
     background: transparent;
     display: inline-block;
-    /* transition: var(--accordian-transition); */
 }
 
 .accordian-icon:hover {
-    /* border: 2px solid black; */
     color: var(--accent-clr);
 }
 
 .accordian-question {
-    /* border: 1px solid black; */
     padding: 0.5rem 1rem;
     border-radius: 2rem;
 }

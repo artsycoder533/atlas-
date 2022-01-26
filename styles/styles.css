@@ -295,6 +295,10 @@ ul {
     width: 100%;
     display: none;
     height: calc(100vh - 75px);
+ 
+    gap: 2rem;
+    font-size: 1.5rem;
+    padding-top: 2rem;
 }
 
 .show-links {
@@ -419,6 +423,8 @@ ul {
     justify-content: flex-end;
     gap: 1rem;
     display: flex;
+    padding-top: 0;;
+    font-size: initial;    
   }
 
   .nav-link {

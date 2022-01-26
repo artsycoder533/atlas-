@@ -1079,6 +1079,8 @@ input[type="checkbox"] {
     padding: 2rem;
     box-shadow: var(--box-shadow);
     max-width: 90vw;
+    display: flex;
+    flex-direction: column;
 } 
 
 .services-description .btn-primary {

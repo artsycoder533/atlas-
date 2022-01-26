@@ -1051,7 +1051,6 @@ input[type="checkbox"] {
     margin-bottom: 2rem;
     display: flex;
     /* flex-direction: column; */
-    border: 1px solid blue;
 }
  
  .services-image {
@@ -1065,7 +1064,6 @@ input[type="checkbox"] {
     padding: 2rem;
     box-shadow: var(--box-shadow);
     max-width: 90vw;
-    border: 1px solid red;
 } 
 
 .services-description .btn-primary {

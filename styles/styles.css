@@ -256,6 +256,7 @@ ul {
   display: flex;
   align-items: center;
   height: 100%;
+  width: 100%;
 }
 
 .company-logo {
@@ -270,7 +271,7 @@ ul {
     font-weight: bold;
     color: var(--accent-clr);
     letter-spacing: 1px;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .logo-link:hover {
@@ -311,6 +312,7 @@ ul {
   padding: 1rem;
   transition: var(--transition);
   padding-left: 3rem;
+  
 }
 
 /* sub links */
@@ -408,6 +410,7 @@ ul {
 
   .nav {
     height: 100%;
+     width: 100%;
   }
   
   .header-container {
@@ -424,7 +427,8 @@ ul {
     gap: 1rem;
     display: flex;
     padding-top: 0;;
-    font-size: initial;    
+    font-size: initial;  
+    width: 100%;  
   }
 
   .nav-link {
@@ -432,6 +436,7 @@ ul {
     padding: 0 1rem;
     display: flex;
     align-items: center;
+    width: 100%;
   }
 
   .nav-link i {

@@ -224,9 +224,9 @@ ul {
 }
 
 /* MAIN */
-.main {
+/* .main {
     min-height: 100vh;
-}
+} */
 
 /* HEADER */
 .header {   
@@ -1049,10 +1049,9 @@ input[type="checkbox"] {
 /* SERVICES PAGE */
 /* services */
 .services {
-    /* min-height: 100vh; */
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    /* gap: 3rem; */
     padding: 2rem 0;
     justify-content: center;
 }
@@ -1133,6 +1132,7 @@ input[type="checkbox"] {
 .services-description .cta-btn {
     margin-top: 2rem;
 }
+
 @media screen and (min-width: 767px){
     .assessments,
     .individual {

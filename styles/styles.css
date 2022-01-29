@@ -943,7 +943,7 @@ input[type="checkbox"] {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background: lightgreen;
+    background: var(--accent-clr);
 }
 
 .about-title {
@@ -963,6 +963,11 @@ input[type="checkbox"] {
     height: 100%;
     padding: 3rem 4rem;
 }
+
+.about-teaching {
+    background: lightgreen;
+}
+
 
 /* bio section */
 .bio {
@@ -1246,4 +1251,4 @@ input[type="checkbox"] {
     .cta {
         flex-direction: row;
     }
-}
+}}

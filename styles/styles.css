@@ -10,7 +10,7 @@
     /* colors */
     --hamburger-btn-clr: #fff;
     --hamburger-hover-clr: #ff0000;
-    --header-background-clr: #363636;
+    --header-background-clr: #000000;
     --header-text-clr: #fff;
     --link-clr: #fff;
     --link-hover-clr: #f0d229;
@@ -240,6 +240,7 @@ ul {
   background: var(--header-background-clr);
   display: flex;
   align-items: center;
+  
 }
 
 .header-container {
@@ -249,7 +250,7 @@ ul {
   flex-direction: column;
   width: 100%;
   /* overflow: hidden; */
-  
+  padding: 0 1rem;
 }
 
 .company {
@@ -271,7 +272,7 @@ ul {
     font-weight: bold;
     color: var(--accent-clr);
     letter-spacing: 1px;
-    /* width: 100%; */
+    width: 100%;
 }
 
 .logo-link:hover {
@@ -455,6 +456,10 @@ ul {
   .nav-links li:hover .sub-links {
     display: block;
   }
+
+  .header-container {
+      padding: 0;
+  }
 }
 
 /* HERO SECTION */
@@ -464,7 +469,7 @@ ul {
     display: flex;
     align-items: center;
     background: gray;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/hero.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/hero.jpg) no-repeat center / cover;
 }
 
 .hero-content {

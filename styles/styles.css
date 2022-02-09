@@ -10,16 +10,16 @@
     /* colors */
     --hamburger-btn-clr: #fff;
     --hamburger-hover-clr: #ff0000;
-    --header-background-clr: #000000;
+    --header-background-clr: #000;
     --header-text-clr: #fff;
     --link-clr: #fff;
     --link-hover-clr: #f0d229;
     --footer-background-clr: #1b1b1b;
     --footer-heading-clr: #fffafac7;
     --footer-link-clr: #fffafa;
-    --underline-clr: #f0d229;
-    --accent-clr: #f0d229;
-    --accent-clr-opacity: rgb(240, 210, 41);
+    --underline-clr: #8fcacc;
+    --accent-clr: #329c9c;
+    --accent-clr-opacity: #329c9c;;
     --scrollbar-track-clr: #1b1b1b;
     --scrollbar-border-clr: #808080;
     --body-font-clr: #1b1b1b;
@@ -27,6 +27,7 @@
     --off-white: #fffafa;
     --red: #ff0000;
     --black: #000;
+    --heading-clr: #57433f;
     
     /* typography */;
     --body-font: 'Roboto', sans-serif;
@@ -100,6 +101,7 @@ ul {
     color: var(--black);
     border: none;
     position: relative;
+    color: white;
 }
 
 .btn-primary::after {
@@ -134,7 +136,7 @@ ul {
 
 .btn-secondary {
     background: transparent;
-    border: 2px solid white;
+    border: 2px solid var(--accent-clr);
     color: var(--white)
 }
 
@@ -159,7 +161,7 @@ ul {
     font-size: 2rem;
      position: relative; 
     text-transform: uppercase;
-    
+    color: var(--heading-clr);
 }
 
 @media screen and (min-width: 767px) {
@@ -261,7 +263,7 @@ ul {
 }
 
 .company-logo {
-    width: 40px;
+    width: 60px;
     -o-object-fit: cover;
        object-fit: cover;
 }
@@ -531,10 +533,10 @@ ul {
 }
 /* COMPANY ABOUT SECTION */
 .about {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     background: var(--off-white);
     padding: 4rem 0;
-    height: 100%;
+    /* height: 100%; */
 }
 
 .mission {
@@ -548,6 +550,7 @@ ul {
     /* display: block; */
     margin: 5rem auto;
     padding: 0.5rem;
+    
 }
 
 .mission-statement::before {
@@ -567,7 +570,7 @@ ul {
     align-items: center;
     gap: 2rem;
     justify-content: space-between;
-    height: 100%;
+    /* height: 100%; */
 }
 
 .cards {
@@ -629,6 +632,7 @@ ul {
 
 .about .btn-primary {
     color: var(--black);
+    margin-top: 2rem;
 }
 
 
@@ -639,7 +643,7 @@ ul {
     }
 }
 @media screen and (min-width: 992px){
-        .about-section {
+    .about-section {
         justify-content: space-between;
         height: 100%;
     }
@@ -653,7 +657,7 @@ ul {
 
 @media screen and (min-width: 1250px) {
     .about {
-        height: 100vh;
+        /* height: 100vh; */
     }
     
     .cards {
@@ -673,8 +677,12 @@ ul {
     display: flex;
     background: var(--header-background-clr);
     color: var(--header-text-clr);
+    background: var(--heading-clr);
 }
 
+.contact .title {
+    color: white;
+}
 .contact-section {
     display: flex;
     flex-direction: column;
@@ -699,7 +707,7 @@ ul {
 }
 
 .form-heading {
-    color: var(--accent-clr);
+    color: var(--underline-clr);
     font-weight: bold;
     text-align: center;
     font-size: 1.1rem;
@@ -717,7 +725,7 @@ ul {
 .form-label {
     padding-bottom: 0.5rem;
     font-weight: bold;
-    color: var(--accent-clr);
+    color: var(--underline-clr);
     letter-spacing: 1px;
 }
 
@@ -768,7 +776,7 @@ input[type="checkbox"] {
 }
 
 .connect-heading {
-    color: var(--accent-clr);
+    color: var(--underline-clr);
     letter-spacing: 1px;
 }
 
@@ -850,6 +858,7 @@ input[type="checkbox"] {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 2rem;
 }
 
 .footer-container {
@@ -857,8 +866,12 @@ input[type="checkbox"] {
     flex-wrap: wrap;
     gap: 2rem;
     justify-content: space-between;
+    
 }
 
+.footer-logo {
+    width: 200px;
+}
 .footer-links {
     min-width: 250px;
     display: flex;
@@ -1251,4 +1264,4 @@ input[type="checkbox"] {
     .cta {
         flex-direction: row;
     }
-}}
+}

@@ -349,7 +349,8 @@ ul {
 }
 
 .nav-link:hover,
-.sub-link:hover{
+.sub-link:hover,
+.hover {
     color: var(--link-clr);
     background: var(--accent-clr);
     color: var(--black);

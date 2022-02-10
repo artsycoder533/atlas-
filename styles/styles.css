@@ -31,7 +31,7 @@
     
     /* typography */;
     --body-font: 'Roboto', sans-serif;
-    
+    --heading-font: 'Montserrat Alternates', sans-serif;
     /* font-sizes */
     
     /* margin/padding */
@@ -84,7 +84,7 @@ ul {
 
 .btn {
     padding: 0.75rem 1.2rem;
-    outline: none;
+    /* outline: none; */
     text-transform: capitalize;
     cursor: pointer;
     font-size: 1rem;
@@ -93,12 +93,13 @@ ul {
     letter-spacing: 1px;
     /* text-transform: uppercase; */
     text-align: center;
+    border: 1px solid transparent;
 }
 
 .btn-primary {
-    color: var(--black);
+    /* color: var(--black); */
     background: var(--accent-clr);
-    color: var(--black);
+    /* color: var(--black); */
     border: none;
     position: relative;
     color: white;
@@ -153,6 +154,8 @@ ul {
 
 .current {
   color: var(--accent-clr);
+  border-bottom: 3px solid var(--accent-clr);
+  font-weight: bold;
 }
 
 .title {
@@ -160,8 +163,9 @@ ul {
     text-align: center;
     font-size: 2rem;
      position: relative; 
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     color: var(--heading-clr);
+    font-family: var(--heading-font);
 }
 
 @media screen and (min-width: 767px) {
@@ -214,11 +218,12 @@ ul {
 
 .scroll-btn {
     border-radius: 5px;
-    border: 1px solid black;
+    border: 1px solid white;
     font-size: 1.1rem;
     font-weight: bold;
     background: var(--accent-clr-opacity);
     transition: var(--transition);
+    color: white;
 }
 
 .scroll-btn:hover {
@@ -260,6 +265,7 @@ ul {
   align-items: center;
   height: 100%;
   width: 100%;
+  justify-content: space-between;
 }
 
 .company-logo {
@@ -471,7 +477,7 @@ ul {
     display: flex;
     align-items: center;
     background: gray;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/hero.jpg) no-repeat center / cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../images/hero.jpg) no-repeat center / cover;
 }
 
 .hero-content {
@@ -484,10 +490,13 @@ ul {
 .hero-heading {
     font-size: 2rem;
     color: white;
+    font-family: var(--heading-font);
+    font-size: 3rem;
 }
 
 .hero-text {
     color: white;
+    font-size: 1.5rem;
 }
 
 .hero-btns {
@@ -528,7 +537,7 @@ ul {
 
 @media screen and (min-width: 767px){
     .hero-heading {
-        font-size: 3rem;
+        font-size: 4rem;
     }
 }
 /* COMPANY ABOUT SECTION */
@@ -631,7 +640,7 @@ ul {
 }
 
 .about .btn-primary {
-    color: var(--black);
+    /* color: var(--black); */
     margin-top: 2rem;
 }
 
@@ -757,6 +766,7 @@ input[type="checkbox"] {
 .form-btn {
     align-self: flex-start;
     color: var(--body-font-clr);
+    color: white;
 }
 
 .highlight {
@@ -834,11 +844,11 @@ input[type="checkbox"] {
 
 .cta-btn {
     align-self: center;
-    color: var(--black);
+    /* color: var(--black); */
 }
 
 .cta .btn-primary {
-    color: var(--black);
+    /* color: var(--black); */
 }
 
 .cta .connect-heading {
@@ -945,6 +955,7 @@ input[type="checkbox"] {
     justify-content: center;
     align-items: center;
     background: url(../images/hero.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../images/hero.jpg) no-repeat center / cover;
 }
 
 .half-hero .title {
@@ -1047,7 +1058,7 @@ input[type="checkbox"] {
 }
 
 .bio .btn-primary {
-    color: var(--black);
+    /* color: var(--black); */
 }
 
 @media screen and (min-width: 992px){
@@ -1109,7 +1120,7 @@ input[type="checkbox"] {
 } 
 
 .services-description .btn-primary {
-    color: var(--black);
+    /* color: var(--black); */
 }
 
 .individual {

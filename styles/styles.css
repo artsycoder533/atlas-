@@ -61,11 +61,11 @@ a {
     text-decoration: none;
     position: relative;
     display: block;
-    color: var(--link-clr);
+    /* color: var(--link-clr); */
 }
 
 a:visited {
-  color: var(--link-clr);
+  /* color: var(--link-clr); */
 }
 
 a:hover{
@@ -73,7 +73,7 @@ a:hover{
 }
 
 a:active {
-    color: var(--link-clr);
+    /* color: var(--link-clr); */
 }
 
 ul {

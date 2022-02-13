@@ -12,14 +12,14 @@
     --hamburger-hover-clr: #ff0000;
     --header-background-clr: #000;
     --header-text-clr: #fff;
-    --link-clr: #fff;
+    --link-clr: #57433f;
     --link-hover-clr: #f0d229;
     --footer-background-clr: #1b1b1b;
     --footer-heading-clr: #fffafac7;
     --footer-link-clr: #fffafa;
     --underline-clr: #8fcacc;
     --accent-clr: #329c9c;
-    --accent-clr-opacity: #329c9c;;
+    --accent-clr-opacity: #329c9c;
     --scrollbar-track-clr: #1b1b1b;
     --scrollbar-border-clr: #808080;
     --body-font-clr: #1b1b1b;
@@ -247,7 +247,7 @@ ul {
   background: var(--header-background-clr);
   display: flex;
   align-items: center;
-  
+  background: white;
 }
 
 .header-container {
@@ -266,12 +266,17 @@ ul {
   height: 100%;
   width: 100%;
   justify-content: space-between;
+  align-items: center;
 }
 
 .company-logo {
-    width: 60px;
+    /* width: 300px; */
     -o-object-fit: cover;
        object-fit: cover;
+    
+    height: 65px;
+    display: flex;
+    align-items: center;
 }
 
 .company-name {
@@ -309,6 +314,8 @@ ul {
     gap: 2rem;
     font-size: 1.5rem;
     padding-top: 2rem;
+
+    background: white;
 }
 
 .show-links {
@@ -328,6 +335,7 @@ ul {
 .sub-links {
   background: var(--header-background-clr);
   display: none;
+  background: var(--white);
 } 
 
 .sub.active-sub {
@@ -373,6 +381,7 @@ ul {
     width: 30px;
     background: var(--hamburger-btn-clr);
     transition: var(--transition);
+    background: var(--accent-clr);
 }
 
 .line::after,
@@ -403,6 +412,7 @@ ul {
 .open-hamurger::after {
     background: var(--hamburger-btn-clr);
     transition: var(--transition);
+    background: var(--accent-clr);
 }
 
 .open-hamburger::before {
@@ -884,6 +894,7 @@ input[type="checkbox"] {
 .footer-logo {
     width: 200px;
 }
+
 .footer-links {
     min-width: 250px;
     display: flex;
@@ -900,7 +911,7 @@ input[type="checkbox"] {
 }
 
 .footer-heading::after {
-    content: '';;
+    content: '';
     position: absolute;
     background: var(--underline-clr);
     height: 2px;
@@ -930,11 +941,11 @@ input[type="checkbox"] {
 
 .footer-attrition {
     display: inline-block;
-    color: var(--link-clr);
+    color: var(--footer-link-clr);
 }
 
 .footer-attrition:visited {
-    color: var(--link-clr);
+    color: var(--footer-link-clr);
 }
 
 .footer .company {
@@ -988,6 +999,7 @@ input[type="checkbox"] {
     width: 100%;
     height: 100%;
     padding: 3rem 4rem;
+    line-height: 1.5;
 }
 
 .about-teaching {
@@ -1032,11 +1044,10 @@ input[type="checkbox"] {
 
 
 .bio-img img {
-    /* width: 100%; */
-    /* height: 100%; */
+    max-width: 100%;
     align-self: center;
-    -o-object-fit: cover;
-       object-fit: cover
+    width: 313px;
+    height: 414px;
 }
 
 .bio-text {
@@ -1052,6 +1063,7 @@ input[type="checkbox"] {
 .bio-description {
     margin: 1rem 0;
     text-indent: 2rem;
+    line-height: 1.5;
 }
 
 .bio-btn {
@@ -1140,7 +1152,9 @@ input[type="checkbox"] {
 
 .services-text {
     margin-bottom: 1rem;
+    line-height: 1.5;
 }
+
 
 .services-text:nth-of-type(5) {
     padding-left: 1rem;
@@ -1162,6 +1176,10 @@ input[type="checkbox"] {
 
 .services-description .cta-btn {
     margin-top: 2rem;
+}
+
+.services-description li {
+    line-height: 1.5;
 }
 
 @media screen and (min-width: 767px){

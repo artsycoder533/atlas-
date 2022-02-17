@@ -518,8 +518,14 @@ ul {
     margin-top: 1rem;
 }
 
+.hero .btn-primary:hover::after,
+.hero .btn-primary:hover::before {
+    background: white;
+}
+
 .hero-btn:hover {
-    color: black;
+    /* color: black; */
+    color: white;
 }
 
 .hero-btn:hover::after {
@@ -783,6 +789,11 @@ input[type="checkbox"] {
     color: white;
 }
 
+.form-btn:hover::before,
+.form-btn:hover::after {
+    background: white;
+}
+
 .highlight {
     color: var(--red);
     font-weight: bold;
@@ -812,7 +823,7 @@ input[type="checkbox"] {
 
 .connect-link,
 .connect-link:visited {
-    color: var(--link-clr);
+    color: var(--footer-link-clr);
 }
 
 .connect-link {
@@ -1307,4 +1318,4 @@ input[type="checkbox"] {
     .cta {
         flex-direction: row;
     }
-}}}}}}}}}
+}}}}}}}}}}

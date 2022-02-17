@@ -767,6 +767,10 @@ ul {
     outline-color: var(--accent-clr);
 }
 
+.form-input:invalid {
+    
+}
+
 textarea::-webkit-input-placeholder{
     font-family: var(--body-font);
 }

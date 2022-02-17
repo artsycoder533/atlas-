@@ -155,7 +155,7 @@ ul {
 .current {
   color: var(--accent-clr);
   border: 2px solid var(--accent-clr);
-  font-weight:font-weight
+  font-weight: bold;
 }
 
 .title {
@@ -174,7 +174,9 @@ ul {
     }
 
     .current {
-        border-bottom: 3px solid var(--accent-clr);
+        border: none;
+        /* border-bottom: 3px solid var(--accent-clr); */
+        background: var(--underline-clr);
     }
 }
 

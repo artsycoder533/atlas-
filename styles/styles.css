@@ -768,7 +768,7 @@ ul {
 }
 
 .form-input:invalid {
-    
+    background: rgb(250, 127, 127);
 }
 
 textarea::-webkit-input-placeholder{

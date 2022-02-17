@@ -1067,16 +1067,18 @@ input[type="checkbox"] {
 
 
 .bio-img img {
-    max-width: 100%;
+    /* max-width: 100%; */
     align-self: center;
     width: 313px;
     height: 414px;
+    flex-basis: 50%;
 }
 
 .bio-text {
    line-height: 1.5; 
    display: flex;
    flex-direction: column;
+   
 }
 
 .bio-heading {
@@ -1087,6 +1089,10 @@ input[type="checkbox"] {
     margin: 1rem 0;
     text-indent: 2rem;
     line-height: 1.5;
+}
+
+.bio-description:not(:last-child){
+    
 }
 
 .bio-btn {

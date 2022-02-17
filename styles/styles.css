@@ -316,6 +316,7 @@ ul {
     padding-top: 2rem;
 
     background: white;
+    
 }
 
 .show-links {
@@ -328,6 +329,7 @@ ul {
   padding: 1rem;
   transition: var(--transition);
   padding-left: 3rem;
+  color: var(--link-clr);
   
 }
 
@@ -926,6 +928,11 @@ input[type="checkbox"] {
     padding-bottom: 0.5rem;
 }
 
+.footer-link:hover {
+    text-decoration: underline;
+    color: var(--accent-clr);
+}
+
 .footer-link::after {
     bottom: 0;
 }  
@@ -942,6 +949,11 @@ input[type="checkbox"] {
 .footer-attrition {
     display: inline-block;
     color: var(--footer-link-clr);
+}
+
+.footer-attrition:hover {
+    color: var(--accent-clr);
+    text-decoration: underline;
 }
 
 .footer-attrition:visited {

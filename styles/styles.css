@@ -475,6 +475,7 @@ ul {
 
   .sub-links {
     position: absolute;
+    box-shadow: var(--box-shadow);
   }
 
   .sub-link {

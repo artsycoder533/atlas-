@@ -212,6 +212,7 @@ ul {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background:rgba(240, 210, 41, 0.8);
+  background: var(--heading-clr);
 } 
 
 /* back to top button */
@@ -1106,6 +1107,8 @@ input[type="checkbox"] {
     width: 313px;
     height: 414px;
     flex-basis: 50%;
+    -o-object-fit: contain;
+       object-fit: contain;
 }
 
 .bio-text {
@@ -1190,10 +1193,11 @@ input[type="checkbox"] {
 .services-description {
     background:var(--white);
     padding: 2rem;
-    box-shadow: var(--box-shadow);
+    /* box-shadow: var(--box-shadow); */
     max-width: 90vw;
     display: flex;
     flex-direction: column;
+    border-left: 9px solid var(--underline-clr);
 } 
 
 .services-description .btn-primary {
@@ -1202,11 +1206,12 @@ input[type="checkbox"] {
 
 .individual {
     background: url(../images/individual.jpg) no-repeat center / cover;
+    background: var(--underline-clr);
 } 
 
 .assessments {
     background: url(../images/assessments.jpg) no-repeat left / cover;
-    background: var(--header-background-clr);
+    background: var(--underline-clr);
 }
 
 .services-name {
@@ -1257,13 +1262,15 @@ input[type="checkbox"] {
         flex-direction: row;
     }
 
-    .services-description {
+    /* .services-description {
         margin-left: -300px;
         margin-top: 100px;
-    }
 
-    .service-imgage {
+    } */
+
+    .services-image {
         display: block;
+        
     }
 }
 
@@ -1358,4 +1365,4 @@ input[type="checkbox"] {
     .cta {
         flex-direction: row;
     }
-}}}
+}

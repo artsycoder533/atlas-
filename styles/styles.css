@@ -159,6 +159,10 @@ ul {
   
 }
 
+.active-sub {
+    /* border: 2px solid var(--underline-clr); */
+}
+
 .footer .active {
   color: var(--accent-clr);
   font-weight: bold;
@@ -356,7 +360,8 @@ ul {
 } 
 
 .sub.active-sub {
-  background: var(--accent-clr);
+  /* background: var(--accent-clr); */
+  border: 4px solid var(--underline-clr);
 }
 
 .sub-links.show-sublinks {

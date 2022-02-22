@@ -12,6 +12,14 @@ const subLink = document.querySelectorAll(".sub-link");
 // const minus = document.getElementsByClassName("fa-minus");
 // const plus = document.getElementsByClassName("fa-plus");
 
+// animation
+document.body.classList.add("animation-loading");
+
+function showPage() {
+  document.body.classList.remove("animation-loading");
+}
+window.addEventListener("load", showPage);
+
 const toggleMenu = () => {
   line.classList.toggle("open-hamburger");
   navLinks.classList.toggle("show-links");

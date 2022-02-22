@@ -5,6 +5,13 @@
     box-sizing: border-box;
 }
 
+.animation-loading *,
+.animation-loading *::before,
+.animation-loading *::after {
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+}
+
 /* CSS VARIABLES */
 :root {
     /* colors */
@@ -512,8 +519,29 @@ ul {
     position: relative;
     display: flex;
     align-items: center;
-    background: gray;
+    /* background: gray; */
+    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../images/hero.jpg) no-repeat center / cover; */
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    z-index: -3;
+    height: 85vh;
+    -webkit-animation: no-transform 2s 0.5s cubic-bezier(0, 0.5, 0, 1) forwards;
+            animation: no-transform 2s 0.5s cubic-bezier(0, 0.5, 0, 1) forwards;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../images/hero.jpg) no-repeat center / cover;
+}
+
+.animate {
+    -webkit-animation: no-transform 0.6s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
+            animation: no-transform 0.6s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
+    opacity: 0;
+    transform: translateY(-4rem) scale(0.8);
 }
 
 .hero-content {
@@ -528,17 +556,23 @@ ul {
     color: white;
     font-family: var(--heading-font);
     font-size: clamp(2rem, 2.5rem, 3rem);
+    -webkit-animation-delay: 0.8s;
+            animation-delay: 0.8s;
 }
 
 .hero-text {
     color: white;
     font-size: clamp(0.75rem, 1rem, 1.5rem);
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
 }
 
 .hero-btns {
     display: flex;
     gap: 1.5rem;
     margin-top: 1rem;
+    -webkit-animation-delay: 1.2s;
+            animation-delay: 1.2s;
 }
 
 .hero .btn-primary:hover::after,
@@ -577,10 +611,25 @@ ul {
     fill: var(--off-white);
 }
 
+
 @media screen and (min-width: 767px){
     .hero-heading {
         font-size: 4rem;
     }
+}
+
+@-webkit-keyframes no-transform {
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes no-transform {
+  100% {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 /* COMPANY ABOUT SECTION */

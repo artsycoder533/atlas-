@@ -806,18 +806,6 @@ ul {
     gap: 2rem;
 }
 
-.web-form {
-    border: 2px solid red;
-   
-}
-
-[data-secure-form] {
-     color: white;
-}
-
-.web-form label {
-    color: white;
-}
 
 .contact-form {
     display: flex;

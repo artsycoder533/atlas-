@@ -806,8 +806,9 @@ ul {
     gap: 2rem;
 }
 
-[data-secure-form] {
+.web-form {
     padding: 2rem;
+    width: 100%;
 }
 
 .contact-form {

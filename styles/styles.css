@@ -808,7 +808,11 @@ ul {
 
 .web-form {
     border: 2px solid red;
-    color: white;
+   
+}
+
+[data-secure-form] {
+     color: white;
 }
 
 .web-form label {

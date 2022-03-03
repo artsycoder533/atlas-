@@ -894,8 +894,8 @@ input[type="checkbox"] {
 .contact-connect {
     padding: 1rem;
     width: 100%;
-    flex-basis: 50%;
     line-height: 1.75;
+    text-align: center;
 }
 
 .connect-heading {
@@ -922,11 +922,10 @@ input[type="checkbox"] {
 @media screen and (min-width: 992px){
     .contact-container {
         flex-direction: row;
-        align-items: center;
     }
 
     .contact-connect {
-        text-align: right;
+        /* text-align: right; */
     }
 
     .map iframe {

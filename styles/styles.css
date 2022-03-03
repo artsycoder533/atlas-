@@ -806,6 +806,15 @@ ul {
     gap: 2rem;
 }
 
+.web-form {
+    border: 2px solid red;
+    color: white;
+}
+
+.web-form label {
+    color: white;
+}
+
 .contact-form {
     display: flex;
     flex-direction: column;

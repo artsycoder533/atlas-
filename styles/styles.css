@@ -810,7 +810,7 @@ ul {
     width: 100%;
 }
 
-.contact-form {
+/* .contact-form {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -889,7 +889,7 @@ input[type="checkbox"] {
 
 .form-disclosure {
     padding: 1rem 0;
-}
+} */
 
 .contact-connect {
     padding: 1rem;

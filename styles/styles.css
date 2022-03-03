@@ -806,9 +806,9 @@ ul {
     gap: 2rem;
 }
 
-[data-secure-form]{
+/* [data-secure-form]{
     width: 100%;
-}
+} */
 
 /* .contact-form {
     display: flex;

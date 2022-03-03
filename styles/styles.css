@@ -807,12 +807,7 @@ ul {
 }
 
 [data-secure-form]{
-    max-width: 500px;
-}
-
-[data-secure-form] iframe {
-    padding: 2rem;
-    color: white;
+    width: 100%;
 }
 
 .contact-form {

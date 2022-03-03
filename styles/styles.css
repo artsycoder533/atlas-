@@ -806,7 +806,7 @@ ul {
     gap: 2rem;
 }
 
-.web-form {
+[data-secure-form]{
     padding: 2rem;
     width: 100%;
 }

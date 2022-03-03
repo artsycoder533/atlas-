@@ -918,6 +918,11 @@ input[type="checkbox"] {
     display: inline-block;
 }
 
+.connect-link:hover {
+    text-decoration: underline;
+    color: var(--accent-clr);
+}
+
 /* media queries */
 @media screen and (min-width: 992px){
     .contact-container {

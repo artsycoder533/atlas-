@@ -1,0 +1,47 @@
+ <form action="" class="contact-form">
+              <p class="form-heading">Get In Touch!</p>
+              <div class="input-container">
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" class="form-input"  required/>
+              </div>
+              <div class="input-container">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-input" required/>
+              </div>
+              <div class="input-container">
+                <label for="message" class="form-label">Message:</label>
+                <textarea
+                  name="message"
+                  id=""
+                  cols="30"
+                  rows="10"
+                  class="form-input"
+                  placeholder="We are committed to your privacy.  Please only include general, non-confidential information"
+                  required
+                ></textarea>
+              </div>
+              <!-- disclosure statement -->
+              <div class="input-container">
+                <p class="form-disclosure">
+                  Terms of Use <span class="highlight">*</span>
+                </p>
+                <p class="disclosure-statement">
+                  By submitting this form via this web portal, you acknowledge
+                  and accept that risks of communicating your health information
+                  via this unencrypted email and electronic messaging and wish
+                  to continue despite those risks. By clicking "Yes, I want to
+                  submit this form", you agree to hold Atlas Behavioral Health + Wellness harmless for
+                  unauthorized use, disclosure, or access of youre protected
+                  health information sent via this electronic means.
+                </p>
+                <div class="disclosure-container input-container">
+                  <label for="disclosure" class="form-label"
+                    >Yes, I want to submit this form</label
+                  >
+                  <input id="disclosure" type="checkbox" class="form-input" required/>
+                </div>
+              </div>
+              <button type="submit" class="form-btn btn btn-primary">
+                Send Message
+              </button>
+            </form>

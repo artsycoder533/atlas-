@@ -1427,36 +1427,41 @@ input[type="checkbox"] {
     transition: max-height 0.5s ease-in;
 }
 
-.services-cta  {
-    background: lightgray;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-center;
-    font-size: 1.5rem;
-}
 
-.cta {
-    display: flex;
-    flex-direction: column;
-}
-
-.cta .connect-heading {
-    color: var(--black);
-    font-size: 1.5rem;
-}
-
-.services-cta .connect-heading {
-    color: var(--black);
-}
 
 /* media queries */
 @media screen and (min-width: 768px){
     .accordian {
         justify-content: flex-start;
     }
+}
 
-    .cta {
-        flex-direction: row;
-    }
+/* cta section */
+.cta  {
+    background: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    height: auto;
+    padding: 2rem;
+}
+
+.cta .cta-btn {
+    margin-bottom: 2rem;
+}
+
+.cta .connect-heading {
+    color: var(--black);
+    font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.cta-subheading {
+    font-weight: bold;
+}
+
+.cta-details {
+    font-size: 1rem;
 }

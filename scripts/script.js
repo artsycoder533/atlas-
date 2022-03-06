@@ -1,6 +1,6 @@
 const hamburgerBtn = document.getElementById("hamburger");
 const line = document.getElementById("line");
-const navLinks = document.getElementById("nav-links");
+const navLinks = document.getElementById("nav");
 const scrollBtn = document.getElementById("scroll");
 const header = document.querySelector(".header");
 const date = document.querySelector(".date");

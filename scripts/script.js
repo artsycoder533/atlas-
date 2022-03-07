@@ -1,6 +1,7 @@
 const hamburgerBtn = document.getElementById("hamburger");
 const line = document.getElementById("line");
-const navLinks = document.getElementById("nav");
+const nav = document.getElementById("nav");
+const navLinks = document.getElementById("nav-links");
 const scrollBtn = document.getElementById("scroll");
 const header = document.querySelector(".header");
 const date = document.querySelector(".date");
@@ -22,7 +23,7 @@ window.addEventListener("load", showPage);
 
 const toggleMenu = () => {
   line.classList.toggle("open-hamburger");
-  navLinks.classList.toggle("show-links");
+  nav.classList.toggle("show-links");
 }
 
 // sticky header
@@ -54,7 +55,7 @@ function toggleSubMenu(e) {
       //if menu open, toggle
       closeOpenSublinks();
       line.classList.remove("open-hamburger");
-      navLinks.classList.remove("show-links");
+      nav.classList.remove("show-links");
     });
   }
 }

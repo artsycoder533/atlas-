@@ -10,7 +10,7 @@
 
 ## Description
 
-This is a multi-page static website that I built for Atlas Behavioral Health + Wellness. They are in the process of opening their private practice and were in need of a website to attract new clients, allow new and existing clients to schedule appointments as well as offer information about their company.
+This is a multi-page static website that I built for Atlas Behavioral Health + Wellness, a mental health private practice based in North Chesterfield, Virginia. They are in the process of opening their private practice and were in need of a website to attract new clients, allow new and existing clients to schedule appointments as well as offer information about their company.
 
 ### Built With
 - Html

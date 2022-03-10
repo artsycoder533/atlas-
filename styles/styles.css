@@ -1393,9 +1393,9 @@ input[type="checkbox"] {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
+  /* padding: 2rem; */
   gap: 1rem;
-  line-height: 1.5;
+  line-height: 1.
 }
 .accordian {
   display: flex;
@@ -1444,7 +1444,8 @@ input[type="checkbox"] {
 }
 
 .show-accordian {
-  max-height: 300px;
+  max-height: 800px;
+  height: 100%;
   transition: max-height 0.5s ease-in;
 }
 
@@ -1452,6 +1453,10 @@ input[type="checkbox"] {
 @media screen and (min-width: 768px) {
   .accordian {
     justify-content: flex-start;
+  }
+
+  .faq {
+    padding: 2rem;
   }
 }
 

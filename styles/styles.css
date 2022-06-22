@@ -1093,6 +1093,7 @@ ul {
 
   .bio-section:nth-child(3){
     border-bottom: none;
+    padding-bottom: 8rem;
   }
 
   .about-heading {

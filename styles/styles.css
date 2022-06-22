@@ -1046,7 +1046,6 @@ ul {
 .bio-img img {
   align-self: center;
   width: 100%;
-  /* flex-basis: 50%; */
   width: 313px;
   height: 414px;
   -o-object-fit: cover;

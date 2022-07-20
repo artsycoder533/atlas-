@@ -1,4 +1,4 @@
-# Freelance Template 1
+# Atlas Behavioral Health + Wellness
 
 - [Description](#description)
   - [Built With](#built-with)
